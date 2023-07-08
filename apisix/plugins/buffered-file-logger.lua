@@ -30,7 +30,7 @@ local is_apisix_or, process = pcall(require, "resty.apisix.process")
 local batch_processor_manager = bp_manager_mod.new("file logger")
 
 
-local plugin_name = "file-logger"
+local plugin_name = "buffered-file-logger"
 
 
 local schema = {
